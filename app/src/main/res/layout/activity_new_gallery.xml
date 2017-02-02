@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="20px"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageButton
+            android:id="@+id/new_gallery_cancel_button"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/exit"
+            android:layout_gravity="center_vertical"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <TextView
+            android:text="New Gallery"
+            android:textSize="48px"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/new_gallery_save_button"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/save"
+            android:layout_gravity="center_vertical"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Gallery Name:"
+            android:textColor="#0a0a0a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="25px"
+            android:id="@+id/textView" />
+
+        <EditText
+            android:id="@+id/new_gallery_name_field"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/new_gallery_thumbnail"
+        android:src="@drawable/thumb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/new_gallery_thumbnail_button"
+        android:text="Select Thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
